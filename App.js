@@ -15,8 +15,11 @@ function App() {
 				<Route exact path="/">
 					<Home />
 				</Route>
-				<Route exact path="/services">
+        <Route exact path="/services">
 					<ServicesList />
+				</Route>
+				<Route exact path="/services/:serviceId">
+					<ServiceDetail />
 				</Route>
 			</Switch>
 		</div>
